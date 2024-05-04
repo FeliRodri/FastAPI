@@ -25,7 +25,7 @@ def get_db():
 """ while True:   
     
     try:
-        with psycopg.connect(host='localhost', dbname='fastapi', user='postgres', password='269136fe', row_factory=dict_row) as conn:
+        with psycopg.connect(host='localhost', dbname='fastapi', user='postgres', password='xxxx', row_factory=dict_row) as conn:
     
             with conn.cursor() as cur:
                 print("Database connection was sucessfull!!")
@@ -39,7 +39,7 @@ def get_db():
  
 # def get_database_connection():
 #     try:
-#         conn = psycopg.connect(host='localhost', dbname='fastapi', user='postgres', password='269136fe', row_factory=dict_row)
+#         conn = psycopg.connect(host='localhost', dbname='fastapi', user='postgres', password='xxxx', row_factory=dict_row)
 #         return conn
 #     except psycopg.OperationalError as e:
 #         # Manejar el error de conexión
